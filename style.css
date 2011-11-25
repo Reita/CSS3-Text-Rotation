@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection{
+  background: rgba(249,255,74,0.8);
+  color: #333;
+}
+
+body,html {
+  height: 100%;
+}
+
+body {
+  font: 16px/1.1em "Segoe UI", Helvetica, sans-serif;
+  overflow: hidden;
+  background: url('bgnoise_lg.png');
+  background: radial-gradient(50% 50%, farthest-side, rgba(1,1,1,0.3), rgba(255,255,255,0) 50%),
+              url('bgnoise_lg.png');
+  text-shadow: 0 0 1px rgba(255,255,255,0.1),
+}
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+  letter-spacing: -1px;
+  color: rgba(0,0,0,0.4);
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.8);
+  background: rgba(255,255,255,0.5);
+  padding: 30px 20px;
+  width: 574px;
+  border-radius: 10px;
+}
+
+#container {
+  width: 600px;
+  margin: 40px auto;
+}
+
+#wrapper {
+  padding: 12px;
+  width: 650px;
+  height: 393px;
+  overflow: hidden;
+  position: relative;
+}
+
+#wrapper p {
+  height: 303px;
+  font-size: 6em;
+  font-weight: bold;
+  line-height: 1em;
+  padding: 90px 0 0;
+  margin: 0 0 10px 0;
+  position: absolute;
+}
+
+#wrapper p {
+  visibility: hidden;
+}
+
+#wrapper p:nth-child(1) {
+  visibility: visible;
+}
+
+#wrapper p:nth-child(1) span {
+  animation: hide 24s infinite;
+}
+
+#wrapper p:nth-child(2) {
+  animation: hide 24s infinite;
+  animation-delay: 2s;
+}
+
+#wrapper p:nth-child(3) {
+  animation: hide 24s infinite;
+  animation-delay: 4s;
+}
+#wrapper p:nth-child(4) {
+  animation: hide 24s infinite;
+  animation-delay: 6s;
+}
+#wrapper p:nth-child(5) {
+  animation: hide 24s infinite;
+  animation-delay: 8s;
+}
+#wrapper p:nth-child(6) {
+  animation: hide 24s infinite;
+  animation-delay: 10s;
+}
+#wrapper p:nth-child(7) {
+  animation: hide 24s infinite;
+  animation-delay: 12s;
+}
+#wrapper p:nth-child(8) {
+  animation: hide 24s infinite;
+  animation-delay: 14s;
+}
+#wrapper p:nth-child(9) {
+  animation: hide 24s infinite;
+  animation-delay: 16s;
+}
+
+#wrapper p:nth-child(10) {
+  animation: hide 24s infinite;
+  animation-delay: 18s;
+}
+
+#wrapper p:nth-child(11) {
+  animation: hide 24s infinite;
+  animation-delay: 20s;
+}
+
+#wrapper p:nth-child(12) {
+  animation: hide 24s infinite;
+  animation-delay: 22s;
+}
+
+@keyframes hide{
+  0%{ visibility: hidden; opacity: 0; }
+  10%{ visibility: visible; opacity: 1; }
+  12%{ visibility: hidden; opacity: 0; }
+  100%{ visibility: hidden; opacity: 0; }
+}
+
+
+p span {
+  color: #F26522;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 210px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #444;
+  padding: 20px 15px;
+  font-size: 0.8em;
+}
+
+footer ul,
+footer li {
+  list-style: none;
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0072BC;
+}
+
+footer a:hover {
+  border-bottom: 1px dotted #0072BC;
+}
